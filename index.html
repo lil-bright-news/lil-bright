@@ -2,51 +2,99 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>lil’ bright</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --green-dark: #1f7a5c;   /* ロゴ・見出し */
+      --green-main: #3fb68b;   /* アクセント */
+      --green-light: #e8f6f1;  /* 背景用の淡い緑 */
+      --white: #ffffff;
+    }
+
     body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  background-color: var(--white);
-  color: #222;
-}
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--white);
+      color: #222;
+    }
 
-header {
-  text-align: center;
-  padding: 50px 20px 30px;
-  background-color: var(--green-light);
-}
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background-color: var(--green-light);
+    }
 
-header h1 {
-  color: var(--green-dark);
-}
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: var(--green-dark);
+      letter-spacing: 0.03em;
+    }
 
-.description {
-  max-width: 600px;
-  margin: 20px auto 0;
-  line-height: 1.7;
-}
+    .description {
+      max-width: 640px;
+      margin: 30px auto 0;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #333;
+    }
 
-.card {
-  background: var(--white);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
 
-.card h2 {
-  color: var(--green-dark);
-}
+    .card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 20px 22px 24px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-.card a {
-  color: var(--green-main);
-  text-decoration: none;
-}
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: var(--green-dark);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--green-main);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.85rem;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
   </style>
-</head>
 <body>
   <header>
     <div class="logo">lil’ bright</div>

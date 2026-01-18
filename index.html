@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lil’ bright</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", "Noto Sans JP", system-ui, -apple-system, sans-serif;
+      background: #FAFAF0; /* 薄い白＋黄味 */
+      color: #111;
+    }
+
+    header {
+      padding: 48px 20px 32px;
+      text-align: center;
+      background: #E6F4EA; /* 淡い緑 */
+    }
+
+    .logo {
+      font-size: 40px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #2C6B3B; /* 落ち着いた緑 */
+    }
+
+    .tagline {
+      margin-top: 8px;
+      font-size: 16px;
+      color: #6B8E23; /* 少し黄色寄りのグリーン */
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    .card {
+      background: #FFFFFF; /* 白 */
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 6px 20px rgba(255, 223, 130, 0.3); /* ほんのり黄色の光 */
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(255, 223, 130, 0.4); /* 光が差す感じ */
+    }
+
+    .meta {
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 6px;
+      color: #2C6B3B; /* タイトルも緑 */
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      padding: 24px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">lil’ bright</div>
+    <div class="tagline">気分、ちょっと上げよ</div>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="meta">🇪🇸 スペイン / 環境</div>
+      <div class="title">砂漠だった土地に、若者たちが森をよみがえらせた</div>
+      <div class="desc">
+        地元の学生グループが5年間かけて植林を続け、かつて荒れていた土地に小さな森が戻りました。
+        今では鳥や動物も戻り、地域の人たちの憩いの場になっています。
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="meta">🇨🇦 カナダ / 教育</div>
+      <div class="title">授業についていけなかった子どもたちのための“放課後教室”</div>
+      <div class="desc">
+        無料で開かれた学習スペースが、移民家庭の子どもたちを中心に広がっています。
+        「ここで初めて、勉強が楽しいと思えた」という声も。
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="meta">🇯🇵 日本 / テクノロジー</div>
+      <div class="title">捨てられるはずだった食材が、AIで“ごちそう”に</div>
+      <div class="desc">
+        廃棄予定の野菜やパンをAIがレシピ化。
+        フードロスを減らしながら、街の人たちに新しい楽しみを届けています。
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © lil’ bright
+  </footer>
+</body>
+</html>

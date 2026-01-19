@@ -41,51 +41,44 @@
       color: #333;
     }
 
-    main {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-    }
+   main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-    .card {
-      background: var(--white);
-      border-radius: 14px;
-      padding: 20px 22px 24px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+   news-item {
+  display: flex;
+  gap: 16px;
+  background: var(--white);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  align-items: center;
+}
 
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
-    }
+.news-item img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
 
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.2rem;
-      color: var(--green-dark);
-    }
+.news-item h2 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: var(--green-dark);
+}
 
-    .card p {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: #444;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 10px;
-      color: var(--green-main);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .card a:hover {
-      text-decoration: underline;
-    }
+.news-item .meta {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #666;
+}
 
     footer {
       text-align: center;
@@ -116,29 +109,29 @@
   </header>
 
   <main>
-    <div class="card">
-      <h2>小さな優しさが街を変える</h2>
-      <p>
-        通学路に立つ一人のボランティア。その行動が、地域全体を少しずつ変えています。
-      </p>
-      <a href="#">続きを読む →</a>
-    </div>
+   <div class="news-item">
+  <img src="sample1.jpg" alt="">
+  <div class="text">
+    <h2>砂漠だった土地に、若者たちが森をよみがえらせた</h2>
+    <p class="meta">🇪🇸 スペイン / 環境</p>
+  </div>
+</div>
 
-    <div class="card">
-      <h2>捨てられるはずだった食材が笑顔に</h2>
-      <p>
-        フードロス削減に取り組むカフェが、若者の間で話題になっています。
-      </p>
-      <a href="#">続きを読む →</a>
-    </div>
+   <div class="news-item">
+  <img src="sample1.jpg" alt="">
+  <div class="text">
+    <h2>授業についていけなかった子どもたちのための“放課後教室”</h2>
+    <p class="meta">🇨🇦 カナダ / 教育</p>
+  </div>
+</div>
 
-    <div class="card">
-      <h2>音楽がつなぐ、国境を越えた友情</h2>
-      <p>
-        オンライン合唱プロジェクトが、世界中の学生を結びつけました。
-      </p>
-      <a href="#">続きを読む →</a>
-    </div>
+ <div class="news-item">
+  <img src="sample1.jpg" alt="">
+  <div class="text">
+    <h2>砂漠だった土地に、若者たちが森をよみがえらせた</h2>
+    <p class="meta">🇪🇸 スペイン / 環境</p>
+  </div>
+</div>
   </main>
 
   <footer>

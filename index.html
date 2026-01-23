@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>lil’ bright</title>
-
+<link rel="icon" href="images/faviconlogo.png" type="image/png">
+  
   <style>
     :root {
       --green-dark: #1f7a5c;   /* ロゴ・見出し */
@@ -25,6 +26,11 @@
       padding: 60px 20px 40px;
       background-color: var(--green-light);
     }
+
+    .header-logo {
+  height: 50px; 
+  object-fit: contain;
+}
 
     header h1 {
       margin: 0;
@@ -109,6 +115,10 @@
 
 <body>
   <header>
+     <a href="index.html">
+    <img src="images/logo.png" alt="lil' bright ロゴ" class="header-logo">
+  </a>
+    
     <h1>lil’ bright</h1>
      <p style="margin: 10px 0 0; color: var(--green-main); font-weight: 600;">
     気分、ちょっとあげよ

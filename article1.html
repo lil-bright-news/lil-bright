@@ -14,6 +14,32 @@
       line-height: 1.7;
     }
 
+    .article-header {
+  position: relative;
+  height: 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.back-link {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2e7d32;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.site-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 18px;
+  color: #2e7d32;
+}
+
     header {
       padding: 16px 24px;
       border-bottom: 1px solid #eee;
@@ -76,8 +102,12 @@
 
 <body>
 
-<header>
-  <a href="index.html">← lil’ bright</a>
+<header class="article-header">
+  <a href="index.html" class="back-link">← 記事一覧に戻る</a>
+
+  <div class="site-logo">
+    lil' bright
+  </div>
 </header>
 
 <main>

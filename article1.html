@@ -19,6 +19,10 @@
   height: 60px;
   border-bottom: 1px solid #eee;
 }
+    header-logo {
+  height: 50px; /
+  object-fit: contain;
+}
 
 .back-link {
   position: absolute;
@@ -105,9 +109,9 @@
 <header class="article-header">
   <a href="index.html" class="back-link">← 記事一覧に戻る</a>
 
-  <div class="site-logo">
-    lil' bright
-  </div>
+  <a href="index.html">
+    <img src="images/logo.png" alt="記事一覧に戻る" class="header-logo">
+  </a>
 </header>
 
 <main>

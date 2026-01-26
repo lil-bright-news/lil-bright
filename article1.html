@@ -17,34 +17,34 @@
       line-height: 1.7;
     }
 
-    .article-header {
+  .article-header {
   position: relative;
+  padding: 16px 24px;
   height: 60px;
-  border-bottom: 1px solid #eee;
-}
-    header-logo {
-  height: 50px; /
-  object-fit: contain;
 }
 
 .back-link {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #2e7d32;
-  text-decoration: none;
   font-size: 14px;
+  color: #2e7d5b;
+  text-decoration: none;
 }
 
-.site-logo {
+.header-logo {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-weight: bold;
-  font-size: 18px;
-  color: #2e7d32;
+}
+
+    @media (max-width: 600px) {
+  .header-logo img {
+    height: 24px;
+  }
+}
+
+.header-logo img {
+  height: 32px;
+  width: auto;
 }
 
     header {
@@ -112,8 +112,8 @@
 <header class="article-header">
   <a href="index.html" class="back-link">← 記事一覧に戻る</a>
 
-  <a href="index.html">
-    <img src="images/logo.png" alt="記事一覧に戻る" class="header-logo">
+  <a href="index.html" class="header-logo">
+    <img src="logo.png" alt="lil' bright">
   </a>
 </header>
 

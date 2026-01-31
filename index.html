@@ -59,28 +59,44 @@
   gap: 16px;
 }
 
-   .news-item {
+ .news-item {
   display: flex;
-  gap: 18px;
-  padding: 18px;
-  background: var(--white);
+  gap: 16px;
+  background: #fff;
   border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-  align-items: flex-start;
+  overflow: hidden;
+  padding: 14px;
+  text-decoration: none;
+  color: inherit;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    
+.news-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 .news-item img {
-  width: 120px;
-  height: 80px;
+  width: 180px;
+  height: 120px;
   object-fit: cover;
   border-radius: 10px;
-  background: #ddd; /* 画像が無い時のプレースホルダ色 */
   flex-shrink: 0;
 }
 
+    .news-item .text {
+  display: flex;
+  flex-direction: column;
+}
+
 .news-item .title {
+  font-size: 18px;
+  line-height: 1.4;
   margin: 0 0 6px;
-  font-size: 1.05rem;
+  color: #111;
 }
 
 .news-item .title a {
@@ -93,17 +109,25 @@
 }
 
 .news-item .summary {
-  margin: 0 0 8px;
-  font-size: 0.9rem;
+  font-size: 14px;
+  color: #555;
   line-height: 1.6;
-  color: #444;
+  margin: 0 0 10px;
 }
 
-.news-item .meta {
-  font-size: 0.75rem;
-  color: #777;
+.meta {
   display: flex;
-  gap: 12px;
+  gap: 10px;
+  font-size: 12px;
+  color: #777;
+  margin-top: auto;
+}
+
+.tag {
+  background: #eef7f1;
+  color: #2f7f5f;
+  padding: 2px 8px;
+  border-radius: 999px;
 }
 
     footer {
@@ -138,8 +162,9 @@
 
   <main>
       <!-- 1本目 -->
-  <div class="news-item">
- <img src="images/space-solar2.png">
+    
+<a href="article1.html" class="news-item">
+  <img src="images/space-solar2.png" alt="宇宙太陽光発電のイメージ">
 
    <div class="text">
     <h2 class="title">

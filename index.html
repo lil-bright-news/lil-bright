@@ -160,102 +160,45 @@
     </div>
   </header>
 
-  <main>
-      <!-- 1本目 -->
-    
-<a href="article1.html" class="news-item">
-  <img src="images/space-solar2.png" alt="宇宙太陽光発電のイメージ">
-
-  <div class="text">
-    <h2 class="title">
-      宇宙の太陽光を地上へ、日本の送電実験が成功
-    </h2>
-
-    <p class="summary">
-      日本で、宇宙の太陽光を地上へ送る実証実験が成功しました。
-      これまで夢物語だった「宇宙発電」は……
-    </p>
-
-    <div class="meta">
-      <span class="date">2026.01.19</span>
-      <span class="tag">🇯🇵 日本 / テクノロジー</span>
-    </div>
-  </div>
-</a>
-
-     <!-- 2本目へ続く -->
-<a href="article2.html" class="news-item">
-  <img src="images/spain-cancer.png" alt="スペインのがん治療研究イメージ">
-
-  <div class="text">
-    <h2 class="title">
-      
-        スペインで膵臓がん治療に前進、三剤併用で腫瘍消失
-    
-    </h2>
-
-    <p class="summary">
-      スペインの研究チームが、三つの薬を組み合わせることで
-      膵臓がんの腫瘍を完全に消失させる実験結果を発表した。
-      治療が難しいとされて……
-    </p>
-
-    <div class="meta">
-      <span class="date">2026.01.31</span>
-      <span class="tag">🇪🇸 スペイン / 医療・科学</span>
-    </div>
-  </div>
-</a>
-    
-<a href="article3.html" class="news-item">
-  <img src="images/japan-rare-earth.png" alt="日本近海で行われたレアアース泥の採掘実験イメージ">
-
-  <div class="text">
-    <h2 class="title">
-     
-        日本近海でレアアース泥の採掘に成功、資源確保へ前進
-      
-    </h2>
-
-    <p class="summary">
-      日本の研究チームが、深海に存在するレアアース泥の
-      採掘実証に成功。資源自給への……
-    </p>
-
-    <div class="meta">
-      <span class="date">2026.02.01</span>
-      <span class="tag">🇯🇵 日本 / 資源・テクノロジー</span>
-    </div>
-  </div>
-</a>
-
-   <a href="article4.html" class="news-item">
-  <img src="images/marriage.png" alt="ケンドーコバヤシ結婚と第1子誕生のイメージ">
-
-  <div class="text">
-    <h2 class="title">
-      
-        ケンドーコバヤシ、結婚と第1子誕生を発表
-      
-    </h2>
-
-    <p class="summary">
-      お笑い芸人のケンドーコバヤシが、一般女性との結婚と
-      第1子となる長男の誕生を発表。
-      芸能界や……
-    </p>
-
-    <div class="meta">
-      <span class="date">2026.02.02</span>
-      <span class="tag">🇯🇵 日本 / 芸能</span>
-    </div>
-  </div>
-</a>
-    
-  </main>
+   <main id="newsList"></main>
 
   <footer>
     © 2026 lil’ bright
   </footer>
+
+   <script>
+    fetch('data/articles.json')
+      .then(response => response.json())
+      .then(articles => {
+        const newsList = document.getElementById('newsList');
+
+        articles.forEach(article => {
+          const item = document.createElement('a');
+          item.href = article.url;
+          item.className = 'news-item';
+
+          item.innerHTML = `
+            <img src="${article.image}" alt="${article.alt}">
+
+            <div class="text">
+              <h2 class="title">
+                ${article.title}
+              </h2>
+
+              <p class="summary">
+                ${article.summary}
+              </p>
+
+              <div class="meta">
+                <span class="date">${article.date}</span>
+                <span class="tag">${article.tag}</span>
+              </div>
+            </div>
+          `;
+
+          newsList.appendChild(item);
+        });
+      });
+  </script>
 </body>
 </html>

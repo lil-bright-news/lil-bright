@@ -1,32 +1,22 @@
 [
   {
-    "id": "article-001",
-    "title": "スペインで新たな膵臓がん治療法が成果",
-    "summary": "スペインの研究チームが、複数の薬剤を組み合わせた治療で膵臓がんを完全に抑制する成果を発表した。",
+    "id": 1,
+    "title": "宇宙の太陽光を地上へ、日本の送電実験が成功",
+    "summary": "日本で、宇宙の太陽光を地上へ送る実証実験が成功しました。これまで夢物語だった「宇宙発電」は……",
+    "date": "2026.01.19",
+    "tag": "🇯🇵 日本 / テクノロジー",
+    "image": "images/space-solar2.png",
+    "alt": "宇宙太陽光発電のイメージ",
+    "url": "article1.html"
+  },
+  {
+    "id": 2,
+    "title": "スペインで膵臓がん治療に前進、三剤併用で腫瘍消失",
+    "summary": "スペインの研究チームが、三つの薬を組み合わせることで膵臓がんの腫瘍を完全に消失させる実験結果を発表した。",
+    "date": "2026.01.31",
+    "tag": "🇪🇸 スペイン / 医療・科学",
     "image": "images/spain-cancer.png",
-    "date": "2026-01-20",
-    "category": "医療・科学",
-    "country": "🇪🇸 スペイン",
-    "url": "article-cancer-spain.html"
-  },
-  {
-    "id": "article-002",
-    "title": "日本近海でレアアース泥の採掘に成功",
-    "summary": "日本の海洋研究機関が、深海に存在するレアアース泥の採掘試験に成功。資源安全保障の面で注目されている。",
-    "image": "images/japan-rare-earth.png",
-    "date": "2026-01-22",
-    "category": "資源・テクノロジー",
-    "country": "🇯🇵 日本",
-    "url": "article-rare-earth.html"
-  },
-  {
-    "id": "article-003",
-    "title": "ケンドーコバヤシ、結婚を発表",
-    "summary": "お笑い芸人のケンドーコバヤシさんが結婚を発表。多くのファンから祝福の声が寄せられている。",
-    "image": "images/kenkoba.png",
-    "date": "2026-01-25",
-    "category": "エンタメ",
-    "country": "🇯🇵 日本",
-    "url": "article-kenkoba.html"
+    "alt": "スペインのがん治療研究イメージ",
+    "url": "article2.html"
   }
 ]

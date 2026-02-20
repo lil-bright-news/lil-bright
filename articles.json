@@ -1,0 +1,32 @@
+[
+  {
+    "id": "article-001",
+    "title": "スペインで新たな膵臓がん治療法が成果",
+    "summary": "スペインの研究チームが、複数の薬剤を組み合わせた治療で膵臓がんを完全に抑制する成果を発表した。",
+    "image": "images/spain-cancer.png",
+    "date": "2026-01-20",
+    "category": "医療・科学",
+    "country": "🇪🇸 スペイン",
+    "url": "article-cancer-spain.html"
+  },
+  {
+    "id": "article-002",
+    "title": "日本近海でレアアース泥の採掘に成功",
+    "summary": "日本の海洋研究機関が、深海に存在するレアアース泥の採掘試験に成功。資源安全保障の面で注目されている。",
+    "image": "images/japan-rare-earth.png",
+    "date": "2026-01-22",
+    "category": "資源・テクノロジー",
+    "country": "🇯🇵 日本",
+    "url": "article-rare-earth.html"
+  },
+  {
+    "id": "article-003",
+    "title": "ケンドーコバヤシ、結婚を発表",
+    "summary": "お笑い芸人のケンドーコバヤシさんが結婚を発表。多くのファンから祝福の声が寄せられている。",
+    "image": "images/kenkoba.png",
+    "date": "2026-01-25",
+    "category": "エンタメ",
+    "country": "🇯🇵 日本",
+    "url": "article-kenkoba.html"
+  }
+]

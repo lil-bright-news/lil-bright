@@ -167,7 +167,7 @@
   </footer>
 
    <script>
-    fetch('data/articles.json')
+   fetch('./data/articles.json')
       .then(response => response.json())
       .then(articles => {
         const newsList = document.getElementById('newsList');

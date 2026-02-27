@@ -168,7 +168,6 @@
 
    <script>
    fetch('./articles.json')
-     articles.sort((a, b) => b.id - a.id);
       .then(response => response.json())
       .then(articles => {
         const newsList = document.getElementById('newsList');

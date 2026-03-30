@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XがAI「Grok」で自動翻訳——日本語投稿が世界に届く時代が来た | lil' bright</title>
+  <link rel="icon" href="images/faviconlogo.png" sizes="32x32">
+  <link rel="icon" href="images/faviconlogo.png" sizes="48x48">
+  <link rel="apple-touch-icon" href="images/faviconlogo.png">
+
+  <meta property="og:title" content="XがAI「Grok」で自動翻訳——日本語投稿が世界に届く時代が来た">
+  <meta property="og:description" content="XがAI「Grok」による自動翻訳機能を展開中。米国では全ユーザー向けにリリースされ、日本語を含む世界各国の投稿が英語に自動翻訳されて表示される。日本でも「ポストを翻訳」ボタンが導入済みで、言語の壁がついになくなりつつある。">
+  <meta property="og:image" content="https://lil-bright-news.github.io/lil-bright/images/grok-translation.png">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://lil-bright-news.github.io/lil-bright/article20.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Lexend:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #4caf50;
+      --green-dark: #2e7d32;
+      --green-light: #e8f5e9;
+      --dark: #111111;
+      --white: #ffffff;
+      --muted: #6b7280;
+    }
+    body { background: var(--white); color: var(--dark); font-family: 'Noto Sans JP', sans-serif; line-height: 1.7; }
+    .article-header { background: var(--white); border-bottom: 1px solid #e5e7eb; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; }
+    .back-link { font-family: 'Lexend', sans-serif; font-size: 13px; color: var(--green-dark); text-decoration: none; font-weight: 600; }
+    .header-logo img { height: 48px; }
+    .hero-band { background: var(--green); padding: 6px 32px; display: flex; align-items: center; gap: 12px; }
+    .hero-tag { background: var(--dark); color: var(--green); font-family: 'Lexend', sans-serif; font-size: 11px; font-weight: 700; padding: 3px 12px; border-radius: 999px; }
+    .hero-date { font-size: 12px; font-weight: 700; color: var(--white); }
+    main { max-width: 800px; margin: 0 auto; padding: 0 24px 60px; }
+    .title-block { padding: 40px 0 32px; border-bottom: 3px solid var(--green); }
+    h1 { font-weight: 900; font-size: 2rem; line-height: 1.5; }
+    h1 .highlight { background: var(--green); color: white; padding: 0 6px; border-radius: 4px; }
+    .article-image { width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, #c8e6c9, #a5d6a7); overflow: hidden; border-radius: 16px; margin: 32px 0 28px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 13px; }
+    .article-image img { width: 100%; height: 100%; object-fit: cover; border-radius: 16px; }
+    .lead { background: var(--green-light); border-left: 4px solid var(--green); padding: 20px 24px; border-radius: 0 12px 12px 0; font-size: 1rem; font-weight: 700; line-height: 1.9; margin-bottom: 32px; color: #1b4332; }
+    p { font-size: 0.97rem; line-height: 2; color: #374151; margin-bottom: 1.5em; }
+    .highlight-box { background: var(--green-light); border: 2px solid var(--green); border-radius: 16px; padding: 24px 28px; margin: 32px 0; }
+    .highlight-box .box-label { font-family: 'Lexend', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--green-dark); margin-bottom: 10px; }
+    .highlight-box p { color: var(--dark); font-weight: 700; margin: 0; line-height: 2.2; }
+    .timeline-table { width: 100%; border-collapse: collapse; margin: 32px 0; font-size: 14px; }
+    .timeline-table th { background: var(--green); color: white; padding: 10px 14px; text-align: left; font-weight: 700; }
+    .timeline-table td { padding: 10px 14px; border-bottom: 1px solid #e8f5e9; vertical-align: top; }
+    .timeline-table tr:last-child td { border-bottom: none; }
+    .timeline-table tr:nth-child(even) { background: #f9fafb; }
+    .date-col { color: var(--green-dark); font-weight: 700; white-space: nowrap; }
+    .source { margin-top: 48px; padding: 16px 20px; background: #f9fafb; border-radius: 10px; font-size: 12px; color: var(--muted); }
+    .source a { color: var(--green-dark); text-decoration: none; font-weight: 700; }
+    .share { margin-top: 40px; text-align: center; }
+    .share-btn { display: inline-block; padding: 14px 36px; background: var(--dark); color: var(--green); font-family: 'Lexend', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-decoration: none; border-radius: 999px; }
+    footer { text-align: center; padding: 32px 20px; font-size: 0.82rem; color: var(--muted); border-top: 1px solid #e5e7eb; margin-top: 40px; }
+    footer a { color: var(--green-dark); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header class="article-header">
+  <a href="index.html" class="back-link">← 一覧へ</a>
+  <a href="index.html" class="header-logo"><img src="images/logo.png" alt="lil' bright"></a>
+  <div style="width:60px"></div>
+</header>
+
+<div class="hero-band">
+  <span class="hero-tag">💻 海外発 / テクノロジー</span>
+  <span class="hero-date">2026.03.30</span>
+</div>
+
+<main>
+  <div class="title-block">
+    <h1>XがAI「Grok」で<span class="highlight">自動翻訳</span><br>——日本語投稿が世界に届く<br>時代が来た</h1>
+  </div>
+
+  <div class="article-image">
+    <img src="images/grok-translation.png" alt="X Grok自動翻訳イメージ" onerror="this.style.display='none';this.parentNode.innerHTML='[ サムネイル画像 ]'">
+  </div>
+
+  <div class="lead">
+    SNSのX（旧Twitter）が、AI「Grok」による自動翻訳機能の展開を進めています。米国では2025年8月に全ユーザー向けにリリースされ、日本語を含む世界各国の投稿が英語に自動翻訳されて表示されるように。日本でも「ポストを翻訳」ボタンが利用可能となっており、言語の壁を超えたコミュニケーションがじわじわと現実になっています。
+  </div>
+
+  <p>これまでXの翻訳機能はGoogle翻訳を利用したボタン式でした。外国語の投稿に表示される「ポストを翻訳」を手動で押す必要があり、使い勝手に限界がありました。しかし2025年以降、xAIが開発したAI「Grok」が翻訳エンジンとして採用され、機能が大きく進化しています。</p>
+
+  <p>最大の変化は「自動翻訳」の登場です。ユーザーがボタンを押さなくても、タイムラインに流れてくる外国語の投稿が、自分の言語設定に合わせて自動的に翻訳されて表示される仕組みです。投稿の訳文が原文に置き換わるスタイルで表示され、原文へ切り替えるトグルや自動翻訳のオン・オフ設定も用意されています。</p>
+
+  <div class="highlight-box">
+    <div class="box-label">🌍 Grok翻訳機能 展開の流れ</div>
+    <p>
+      2025年6月：米国のWeb版で「ポストを翻訳」機能（Grok版）が本格スタート<br>
+      2025年7月：日本でも「ポストを翻訳」ボタンがGrok版に切り替わり提供開始<br>
+      2025年8月：米国の全ユーザー向けに自動翻訳機能をリリース<br>
+      現在：日本でも利用状況に応じて順次自動翻訳が展開中
+    </p>
+  </div>
+
+  <p>従来のGoogle翻訳と比べてGrokによる翻訳が優れている点は、文脈やニュアンスの把握力です。Grokはxが独自に訓練した大規模言語モデル（LLM）で、Xのリアルタイムデータを学習しており、スラングや文脈を理解した自然な翻訳を目指しています。たとえば「That's lit!」のようなスラングも、単純に直訳するのではなく「めちゃくちゃかっこいい！」といった自然な日本語に変換できるようになっています。</p>
+
+  <table class="timeline-table">
+    <thead>
+      <tr><th>比較項目</th><th>従来（Google翻訳）</th><th>新機能（Grok翻訳）</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>翻訳方式</td>
+        <td>手動ボタン式</td>
+        <td>自動翻訳（ボタン式も併用）</td>
+      </tr>
+      <tr>
+        <td>対応言語数</td>
+        <td>243言語</td>
+        <td>世界主要言語（拡大中）</td>
+      </tr>
+      <tr>
+        <td>文脈・スラング</td>
+        <td>直訳が多い</td>
+        <td>文脈を踏まえた自然な翻訳</td>
+      </tr>
+      <tr>
+        <td>翻訳エンジン</td>
+        <td>Google翻訳</td>
+        <td>Grok（xAI独自AI）</td>
+      </tr>
+      <tr>
+        <td>オン・オフ設定</td>
+        <td>なし</td>
+        <td>あり（設定から切替可能）</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>この機能がもたらす変化はシンプルながら大きいものです。日本語でつぶやいたポストが、米国のユーザーには自動的に英語で表示される——つまり、これまで日本語圏の中だけで完結していた情報や会話が、意識しなくても世界に届くようになります。アニメや文化、スポーツ、日常のひとことが、言語の壁を越えてグローバルなユーザーの目に触れる機会が増えます。</p>
+
+  <p>なお、自動翻訳が気になる場合はオフにすることも可能です。翻訳ラベルの「？」マークをタップして設定を表示するか、「設定とプライバシー」→「アクセシビリティ、表示、言語」→「言語」→「コンテンツの言語」から切り替えることができます。</p>
+
+  <p>言語の壁がなくなる——それはかつてSFの話のようでした。しかし今、日本語でつぶやくだけで世界の誰かに届く可能性が生まれています。小さな一歩のようで、人と人のつながりを大きく広げる変化かもしれません。</p>
+
+  <div class="source">
+    出典：<a href="https://www.itmedia.co.jp/news/articles/2508/13/news089.html" target="_blank" rel="noopener">ITmedia NEWS</a>、
+    <a href="https://forest.watch.impress.co.jp/docs/serial/yajiuma/2032148.html" target="_blank" rel="noopener">窓の杜（やじうまの杜）</a>、
+    <a href="https://sbapp.net/appnews/sns/twi/grok-auto-translation-173501" target="_blank" rel="noopener">SBAPP</a>
+  </div>
+
+  <div class="share">
+    <a class="share-btn" href="https://twitter.com/intent/tweet?text=XがAI「Grok」で自動翻訳——日本語投稿が世界に届く時代が来た&url=https://lil-bright-news.github.io/lil-bright/article20.html&via=lilbright_jp" target="_blank">X でシェア 🚀</a>
+  </div>
+</main>
+
+<footer>
+  © 2026 lil' bright &nbsp;|&nbsp; <a href="index.html">トップへ戻る</a>
+</footer>
+
+</body>
+</html>
